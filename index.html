@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 1) Carrega TODO o Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- (opcional) aqui você pode injetar configuração, por exemplo: -->
+    <script>
+      tailwind.config = {
+        darkMode: ['class'],
+        theme: {
+          extend: {
+            // suas variáveis, cores, etc.
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-background text-foreground">
+    <div id="root"></div>
+    <!-- 2) Depois do CDN, vem seu bundle do Vite -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+
