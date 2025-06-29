@@ -122,7 +122,7 @@ export function BookshelfScreen({
     <div className="p-4 pb-8 scroll-container">
       {/* Indicadores de Status no Topo */}
       <div className="mb-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+        <div className="grid grid-cols-4 md:grid-cols-4 gap-3 mb-4">
           {statusIndicators.map((indicator) => (
             <button
               key={indicator.id}
@@ -311,7 +311,7 @@ export function BookshelfScreen({
           )}
         </div>
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+        <div className="grid grid-cols-5 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           {books.map((book) => (
             <BookCard
               key={book.id}
